@@ -7,5 +7,10 @@ extraMetadata:
   main: build/electron.js
 publish:
   provider: github
+appId: com.mic.tibiatools.app
+productName: Tibia Tools App
+copyright: Michael Anthony Leal Costa
+win:
+  icon: build/favicon.ico
 extends: react-cra
 electronVersion: 2.0.7
