@@ -5,9 +5,9 @@ files:
   - build/**/*
 extraMetadata:
   main: build/electron.js
-publish:
-  provider: github
 appId: com.mic.tibiatools.app
+asar: true
+npmRebuild: true
 productName: Tibia Tools App
 copyright: Michael Anthony Leal Costa
 win:
