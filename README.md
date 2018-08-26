@@ -6,7 +6,7 @@
 
 ## Functions
 
-### Party Shared Experience Calculatior
+### Party Shared Experience Calculator
 
 
 ![initial State Preview](https://i.imgur.com/xHlNnMi.png) ![calc state preview](https://i.imgur.com/xmmgj1j.png)
