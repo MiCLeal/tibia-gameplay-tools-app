@@ -9,6 +9,4 @@
 ### Party Shared Experience Calculatior
 
 
-![initial State Preview](https://i.imgur.com/xHlNnMi.png)
-
-![calc state preview](https://i.imgur.com/xmmgj1j.png)
+![initial State Preview](https://i.imgur.com/xHlNnMi.png) ![calc state preview](https://i.imgur.com/xmmgj1j.png)
