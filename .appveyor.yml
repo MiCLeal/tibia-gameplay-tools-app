@@ -1,0 +1,38 @@
+platform:
+  - x64
+
+cache:
+  # - node_modules
+  - '%APPDATA%\npm-cache'
+  - '%USERPROFILE%\.electron'
+
+init:
+  - git config --global core.autocrlf input
+
+install:
+  - ps: Install-Product node 10 x64
+  - git reset --hard HEAD
+  - npm install npm -g
+  - npm ci --silent
+  - npm run lint
+
+test_script:
+  - node --version
+  - npm --version
+  - npm test
+
+build_script:
+  - npm run build
+  - .\node_modules\.bin\gulp build_plugins
+
+artifacts:
+  - path: dist\*.exe
+    name: installer
+  - path: dist\*.7z
+    name: Archive
+  - path: dist\*.7z
+    name: Archive
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+.*/
