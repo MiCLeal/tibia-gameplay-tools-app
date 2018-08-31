@@ -1,1 +1,35 @@
+$limegreen: limegreen;
+$dark-app: #1E1E1E;
+$dark-control-app: #252526/* #212529 */;
+$text-shadow-app: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+html > body {
+    color: $limegreen;
+    background-color: $dark-app;
+    text-shadow: $text-shadow-app;
+}
+
+div {
+    color:  inherit;
+    background-color: inherit;
+    text-shadow: inherit;
+} 
+
+div > .form .form-control {
+    color: inherit;
+    background-color: $dark-control-app;
+    border: none;
+    border-color: $limegreen;
+    text-shadow: inherit;
+}
+
+div > .form .form-control::placeholder {
+    color: rgb(129, 212, 129);
+    
+}
+
+div > .form .form-control[type="number"]:focus {
+    box-shadow: 0 1px 1px $limegreen inset, 0 0 8px $limegreen;
+}
+
 @import 'bootstrap-scss/bootstrap'

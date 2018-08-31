@@ -1,6 +1,6 @@
 {
   "name": "tibia-gameplay-tools-app",
-  "version": "0.1.0",
+  "version": "0.2.0-alpha.2",
   "private": true,
   "description": "A simple app to calculate party shared exp level.",
   "main": "public/electron.js",
@@ -44,7 +44,7 @@
     "redux": "^4.0.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/styles/ -o src/styles/",
+    "build-css": "node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/styles/ -o src/styles",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/styles/ -o src/styles --watch --recursive",
     "scss-start": "npm-run-all -p watch-css react-start",
     "build": "yarn build-css && react-scripts build",
