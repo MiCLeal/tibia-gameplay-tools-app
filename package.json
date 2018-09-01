@@ -1,6 +1,6 @@
 {
   "name": "tibia-tools-app",
-  "version": "0.2.0-alpha.4",
+  "version": "0.1.0-alpha.4",
   "private": true,
   "description": "A simple app to calculate party shared exp level.",
   "main": "public/electron.js",
@@ -60,7 +60,7 @@
   },
   "build": {
     "appId": "com.mic.tibiatools.app",
-    "asar": false,
+    "asar": true,
     "files": [
       "build/**/*",
       "node_modules/**/*"
