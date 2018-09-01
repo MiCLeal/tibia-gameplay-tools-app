@@ -10,11 +10,86 @@ const Tray = electron.Tray;
 const path = require('path');
 const url = require('url');
 const isDev = require('electron-is-dev');
+require('jquery/dist/jquery.slim')
+
+const template = [
+    {
+        label: 'File',
+        submenu: [
+            {
+                label: 'Exit',
+                click() {
+                    app.quit()
+                }
+            }
+        ]
+    },
+    {
+        label: 'Edit',
+        submenu: [
+          {role: 'undo'},
+          {role: 'redo'},
+          {type: 'separator'},
+          {role: 'cut'},
+          {role: 'copy'},
+          {role: 'paste'},
+          {role: 'pasteandmatchstyle'},
+          {role: 'delete'},
+          {role: 'selectall'}
+        ]
+      },
+      {
+        label: 'View',
+        submenu: [
+          {
+            label: 'Toggle Always on top',
+            type: 'checkbox',
+            click() { mWin.isAlwaysOnTop() ? mWin.setAlwaysOnTop(false) : mWin.setAlwaysOnTop(true) }
+          },
+          {role: 'reload'},
+          {role: 'forcereload'},
+          {
+            label: 'Toggle Development Tools',
+            accelerator: 'ctrl+shift+i',
+            click() {
+              mWin.openDevTools({
+                mode: 'detach'
+              })
+            }
+          },
+          {type: 'separator'},
+          {role: 'resetzoom'},
+          {role: 'zoomin'},
+          {role: 'zoomout'},
+          {type: 'separator'},
+          {role: 'togglefullscreen'}
+        ]
+      },
+      {
+        role: 'window',
+        submenu: [
+          {role: 'minimize'},
+          {role: 'close'}
+        ]
+      },
+      {
+        role: 'help',
+        submenu: [
+          {
+            label: 'Learn More',
+            click () { require('electron').shell.openExternal('https://github.com/MiCLeal/tibia-tools-app/blob/master/README.md') }
+          }
+        ]
+      }
+    ]
 
 // let appIcon = null;
 let mWin;
 let winWidth = 350;
 let winHeight = 600;
+let mainMenu = Menu.buildFromTemplate(template)
+
+Menu.setApplicationMenu(mainMenu)
 
 /*ipc.on("put-in-tray", function (evt) {
   const iconName = process.platform === "win32" ? "favicon.ico" : "favicon.png";
@@ -40,7 +115,7 @@ function createWindow() {
   mWin.loadURL(startURL);
 
   mWin.on("closed", () => (mWin = null));
-  
+
 }
 
 // mWin.OpenDevTools({detach: true})

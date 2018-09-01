@@ -27,7 +27,7 @@ class Calc extends Component {
 
     render () {
         return (
-            <div>
+            <div id="Calc">
                 <form className="form">
                         <input className="App form-control" type="number" min="1" step="1" max="1300" value={this.state.actualLevel} onChange={(evt) => this.handleInputChange(evt)} placeholder="Your level" />
                         <br/>

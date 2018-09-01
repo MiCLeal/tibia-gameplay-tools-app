@@ -18,3 +18,6 @@ class App extends Component {
 }
 
 export default App;
+//<button className="btn btn-tools">Calc</button>
+  //        <button className="btn btn-tools">Guild</button>
+    //      <button className="btn btn-tools">Char</button>

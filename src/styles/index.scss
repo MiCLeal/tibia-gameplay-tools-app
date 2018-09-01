@@ -13,7 +13,7 @@ div {
     color:  inherit;
     background-color: inherit;
     text-shadow: inherit;
-} 
+}
 
 div > .form .form-control {
     color: inherit;
@@ -25,11 +25,30 @@ div > .form .form-control {
 
 div > .form .form-control::placeholder {
     color: rgb(129, 212, 129);
-    
+
 }
 
 div > .form .form-control[type="number"]:focus {
     box-shadow: 0 1px 1px $limegreen inset, 0 0 8px $limegreen;
+}
+
+.btn-tools {
+	background-color: $dark-control-app;
+	color: $limegreen;
+	text-shadow: $text-shadow-app;
+}
+
+.btn-tools:focus {
+	box-shadow: 0 1px 1px $limegreen inset, 0 0 8px $limegreen;
+}
+
+.row-tools {
+	margin: 5px;
+	padding: 5px;
+}
+
+.row-tools > .col-4 {
+	padding: 0px;
 }
 
 @import 'bootstrap-scss/bootstrap'
