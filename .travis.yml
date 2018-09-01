@@ -5,6 +5,7 @@ node_js:
 
 install:
   - npm i -g npm
+  - npm i
 
 script:
   - npm run build
