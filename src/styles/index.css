@@ -4,12 +4,7 @@ html > body {
   background-color: #1E1E1E;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
 
-div {
-  color: inherit;
-  background-color: inherit;
-  text-shadow: inherit; }
-
-div > .form .form-control {
+div > .form input.form-control {
   color: inherit;
   background-color: #252526;
   border: none;
@@ -22,6 +17,9 @@ div > .form .form-control::placeholder {
 div > .form .form-control[type="number"]:focus {
   box-shadow: 0 1px 1px limegreen inset, 0 0 8px limegreen; }
 
+.App {
+  background-color: #1E1E1E; }
+
 .btn-tools {
   background-color: #252526;
   color: limegreen;
@@ -29,6 +27,14 @@ div > .form .form-control[type="number"]:focus {
 
 .btn-tools:focus {
   box-shadow: 0 1px 1px limegreen inset, 0 0 8px limegreen; }
+
+#Main > .jumbotron {
+  background-color: #1E1E1E;
+  height: 100%; }
+
+#Main .btn-tools {
+  height: 300px;
+  width: 300px; }
 
 .row-tools {
   margin: 5px;

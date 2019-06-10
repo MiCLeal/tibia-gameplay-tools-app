@@ -9,18 +9,31 @@ html > body {
     text-shadow: $text-shadow-app;
 }
 
-div {
-    color:  inherit;
-    background-color: inherit;
-    text-shadow: inherit;
-}
+// #Calc .row {
+// 	height: inherit;
+// 	width: inherit;
+// 	margin: 0%;
+// }
 
-div > .form .form-control {
+// div {
+//     color:  inherit;
+//     background-color: inherit;
+//     text-shadow: inherit;
+// }
+
+// #root > .ViewManager {
+// 	height: inherit;
+// 	width: inherit;
+// }
+
+div > .form input.form-control {
     color: inherit;
     background-color: $dark-control-app;
     border: none;
     border-color: $limegreen;
-    text-shadow: inherit;
+	text-shadow: inherit;
+	// margin: 8px;
+	// width: 96%;
 }
 
 div > .form .form-control::placeholder {
@@ -31,6 +44,9 @@ div > .form .form-control::placeholder {
 div > .form .form-control[type="number"]:focus {
     box-shadow: 0 1px 1px $limegreen inset, 0 0 8px $limegreen;
 }
+.App {
+	background-color: $dark-app
+}
 
 .btn-tools {
 	background-color: $dark-control-app;
@@ -40,6 +56,16 @@ div > .form .form-control[type="number"]:focus {
 
 .btn-tools:focus {
 	box-shadow: 0 1px 1px $limegreen inset, 0 0 8px $limegreen;
+}
+
+#Main > .jumbotron {
+	background-color: $dark-app;
+	height: 100%;
+}
+
+#Main .btn-tools {
+	height: 300px;
+	width: 300px;
 }
 
 .row-tools {
