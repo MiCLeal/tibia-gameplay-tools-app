@@ -13,5 +13,6 @@
 
 ![initial State Preview](https://i.imgur.com/xHlNnMi.png) ![calc state preview](https://i.imgur.com/xmmgj1j.png)
 
-
-![[Donate]https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=63PDQ3VZ3H36A&source=url)
+|    Paypal      |
+|----------------|
+|[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=63PDQ3VZ3H36A&source=url)|
