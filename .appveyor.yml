@@ -15,7 +15,6 @@ install:
   - npm install npm -g
   - npm install
   - npm ci --silent
-  - npm run lint
 
 test_script:
   - node --version
