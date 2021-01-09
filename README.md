@@ -14,6 +14,4 @@
 
 ![initial State Preview](https://i.imgur.com/YKeHdbf.png) ![calc state preview](https://i.imgur.com/WEShfNT.png)
 
-|    Paypal      |
-|----------------|
-|[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=63PDQ3VZ3H36A&source=url)|
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
