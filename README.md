@@ -1,3 +1,4 @@
+# ⛔️ DEPRECATED
 # Tibia Tools App
 [![Build Status](https://travis-ci.org/MiCLeal/tibia-tools-app.svg?branch=master)](https://travis-ci.org/MiCLeal/tibia-tools-app)
 [![Build status](https://ci.appveyor.com/api/projects/status/8rk9kr29iys04d0u?svg=true)](https://ci.appveyor.com/project/MiCLeal/tibia-gameplay-tools-app)
